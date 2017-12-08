@@ -1,0 +1,28 @@
+{
+  "name": "website-status-checker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.15.5"
+  },
+  "description": "A sample node.js API to see whether a website is offline or online.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "author": "Ayush Gupta",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyushG3112/website-status-checker-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AyushG3112/website-status-checker-node/issues"
+  },
+  "homepage": "https://github.com/AyushG3112/website-status-checker-node#readme"
+}
