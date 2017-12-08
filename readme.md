@@ -5,4 +5,4 @@ How to run.
 
 Request Sample:
  
-**localhost:8000**/?urlToCheck=**url To Check Without http or other Protocol Prefix**
+**localhost:8000**/?urlToCheck=**google.com**
