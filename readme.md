@@ -4,5 +4,5 @@ How to run.
 2. Run `npm start`
 
 Request Sample:
-
-<Base URL>/?urlToCheck=<url To Check Without http or other Protocol Prefix>
+ 
+**localhost:8000**/?urlToCheck=**url To Check Without http or other Protocol Prefix**
