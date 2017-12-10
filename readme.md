@@ -4,5 +4,13 @@ How to run.
 2. Run `npm start`
 
 Request Sample:
- 
-**localhost:8000**/?urlToCheck=**google.com**
+
+<br />
+**HTTPS**:
+
+**localhost:8000**/?urlToCheck=**google.com**&isHttps=**1**
+
+<br/>
+**HTTP**:
+
+**localhost:8000**/?urlToCheck=**google.com**&isHttps=**0**

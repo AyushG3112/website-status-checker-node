@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const webStatusChecker = require('./lib/webChecker')
 
+const MAX_RETRIES = 3;
 
 if (cluster.isMaster) {
     for(var i = 0; i < require('os').cpus().length; i++) {
@@ -15,12 +16,13 @@ if (cluster.isMaster) {
     app.use(bodyParser.urlencoded({extended: false}));
 
     app.get('/', function (req, res) {
-        return webStatusChecker.check(req.query.urlToCheck, 3).then(function (status) {
+        return webStatusChecker.check(req.query.urlToCheck, req.query.isHttps === "1", MAX_RETRIES).then(function (status) {
             res.status(200).json({
                 message: "Ok",
                 status: status
             })
         }).catch(function (err) {
+            console.log(err)
             res.status(500).json({
                 message: "Something Went Wrong"
             })
