@@ -6,11 +6,11 @@ How to run.
 Request Sample:
 
 <br />
-**HTTPS**:
+**HTTPS**
 
 **localhost:8000**/?urlToCheck=**google.com**&isHttps=**1**
 
 <br/>
-**HTTP**:
+**HTTP**
 
-**localhost:8000**/?urlToCheck=**google.com**&isHttps=**0**
+**localhost:8000**/?urlToCheck=**google.com**
